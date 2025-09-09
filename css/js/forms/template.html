@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire - {PARTICIPANT_NAME}</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionnaire personnalisé</h1>
+        <p>Bonjour {PARTICIPANT_NAME}, voici votre questionnaire personnalisé.</p>
+        
+        <form id="questionnaire" data-participant="{PARTICIPANT_ID}">
+            {QUESTIONS_HTML}
+            
+            <div class="submit-section">
+                <button type="submit" class="submit-btn">Envoyer mes réponses</button>
+            </div>
+        </form>
+    </div>
+    <script src="../js/form-handler.js"></script>
+</body>
+</html>
